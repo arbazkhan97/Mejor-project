@@ -123,7 +123,7 @@ module.exports.renderEditForm=async (req,res)=>{
 
        }
         
-        req.flash("successfully"," Listing updated!");
+        req.flash("success"," Listing updated!");
         
         res.redirect(`/listings/${id}`)
         }
