@@ -63,6 +63,11 @@ font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
     justify-content: center;
 }
+.f-info-socials a{
+    text-decoration: none;
+    
+
+}
 .f-info-socials i{
     margin-right: 1rem;
     font-size: 1.2rem;
