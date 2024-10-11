@@ -65,6 +65,7 @@ font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 .f-info-socials a{
     text-decoration: none;
+    cursor: pointer;
     
 
 }
