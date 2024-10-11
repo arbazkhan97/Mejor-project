@@ -123,7 +123,7 @@ module.exports.renderEditForm=async (req,res)=>{
 
        }
         
-        req.flash("success"," Listing updated!");
+        req.flash("successfully"," Listing updated!");
         
         res.redirect(`/listings/${id}`)
         }
@@ -134,6 +134,6 @@ module.exports.renderEditForm=async (req,res)=>{
 
             let {id}=req.params;                        
             await listing.findByIdAndDelete(id)                       
-            req.flash("success"," Listing Deleted!");       
+            req.flash("successfully"," Listing Deleted!");       
             res.redirect('/listings')
             }
