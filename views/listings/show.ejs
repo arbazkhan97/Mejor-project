@@ -45,6 +45,7 @@
 <!-- review section form -->
 
 <div class="col-8 offset-3 mb-3" >
+
     <% if (currentUser) { %>
      
     
@@ -107,12 +108,14 @@
                 <p class="card-text"><%= review.comment %></p>
                                   
             </div>
+            <% if(currentUser){ %>
 
             <form class="mb-3" method="post" action="/listings/<%= list._id %>/reviews/<%= review._id %>?_method=DELETE">
 
                 <button class="btn btn-sm btn-danger mt-2">Delete</button>
             </form>
 
+            <% } %>
        </div>
        <% } %>
     </div>
